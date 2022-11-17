@@ -1,0 +1,234 @@
+body {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-color: hsl(222deg, 26%, 31%);
+  justify-content: center;
+}
+body.theme2 {
+  background-color: hsl(0deg, 0%, 90%);
+}
+body.theme2 .calculator-header h1 {
+  color: hsl(60deg, 10%, 19%);
+}
+body.theme2 .calculator-header .themes {
+  color: hsl(60deg, 10%, 19%);
+}
+body.theme2 #result {
+  color: hsl(60deg, 10%, 19%);
+}
+body.theme2 .calculator-screen {
+  background-color: hsl(0deg, 0%, 93%);
+}
+body.theme2 .calculator-screen .screen {
+  color: hsl(0deg, 0%, 100%);
+}
+body.theme2 .calculator-keys {
+  background-color: hsl(0deg, 5%, 81%);
+}
+body.theme2 .calculator-keys .key {
+  background-color: hsl(185deg, 42%, 37%);
+  box-shadow: hsl(185deg, 58%, 25%);
+}
+body.theme2 .calculator-keys .key:active {
+  box-shadow: 0 4px hsl(185deg, 58%, 25%);
+  transform: translateY(4px);
+}
+body.theme2 .calculator-keys .calculator-keys-content button {
+  color: hsl(60deg, 10%, 19%);
+}
+body.theme2 .calculator-keys .calculator-keys-content .delete {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(185deg, 42%, 37%);
+  box-shadow: 0 4px hsl(185deg, 58%, 25%);
+}
+body.theme2 .calculator-keys .calculator-keys-content .delete:active {
+  box-shadow: 0 4px hsl(185deg, 58%, 25%);
+  transform: translateY(4px);
+}
+body.theme2 .calculator-keys .calculator-keys-content .all-clear {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(185deg, 42%, 37%);
+  box-shadow: 0 4px hsl(185deg, 58%, 25%);
+}
+body.theme2 .calculator-keys .calculator-keys-content .all-clear:active {
+  box-shadow: 0 4px hsl(185deg, 58%, 25%);
+  transform: translateY(4px);
+}
+body.theme2 .calculator-keys .calculator-keys-content .equal-sign {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(25deg, 98%, 40%);
+  box-shadow: 0 4px hsl(25deg, 99%, 27%);
+}
+body.theme2 .calculator-keys .calculator-keys-content .equal-sign:active {
+  box-shadow: 0 4px hsl(25deg, 99%, 27%);
+  transform: translateY(4px);
+}
+body.theme3 {
+  background-color: hsl(268deg, 75%, 9%);
+  color: hsl(52deg, 100%, 62%);
+}
+body.theme3 .calculator-header h1 {
+  color: hsl(52deg, 100%, 62%);
+}
+body.theme3 .calculator-header .themes {
+  color: hsl(52deg, 100%, 62%);
+}
+body.theme3 #result {
+  color: hsl(52deg, 100%, 62%);
+}
+body.theme3 .calculator-screen {
+  background-color: hsl(268deg, 71%, 12%);
+}
+body.theme3 .calculator-screen .screen {
+  color: hsl(52deg, 100%, 62%);
+}
+body.theme3 .calculator-keys {
+  background-color: hsl(268deg, 71%, 12%);
+}
+body.theme3 .calculator-keys .key {
+  background-color: hsl(185deg, 42%, 37%);
+  box-shadow: hsl(185deg, 58%, 25%);
+}
+body.theme3 .calculator-keys .key:active {
+  box-shadow: 0 4px hsl(185deg, 58%, 25%);
+  transform: translateY(4px);
+}
+body.theme3 .calculator-keys .calculator-keys-content button {
+  color: hsl(52deg, 100%, 62%);
+  background-color: hsl(268deg, 47%, 21%);
+  box-shadow: 0 4px hsl(285deg, 91%, 52%);
+}
+body.theme3 .calculator-keys .calculator-keys-content .delete {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(281deg, 89%, 26%);
+  box-shadow: 0 4px hsl(285deg, 91%, 52%);
+}
+body.theme3 .calculator-keys .calculator-keys-content .delete:active {
+  box-shadow: 0 4px hsl(285deg, 91%, 52%);
+  transform: translateY(4px);
+}
+body.theme3 .calculator-keys .calculator-keys-content .all-clear {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(281deg, 89%, 26%);
+  box-shadow: 0 4px hsl(285deg, 91%, 52%);
+}
+body.theme3 .calculator-keys .calculator-keys-content .all-clear:active {
+  box-shadow: 0 4px hsl(185deg, 58%, 25%);
+  transform: translateY(4px);
+}
+body.theme3 .calculator-keys .calculator-keys-content .equal-sign {
+  color: hsl(60deg, 10%, 19%);
+  background-color: hsl(176deg, 100%, 44%);
+  box-shadow: 0 4px hsl(177deg, 92%, 70%);
+}
+body.theme3 .calculator-keys .calculator-keys-content .equal-sign:active {
+  box-shadow: 0 4px hsl(25deg, 99%, 27%);
+  transform: translateY(4px);
+}
+
+.calculator-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "League Spartan", sans-serif;
+}
+.calculator-header h1 {
+  color: hsl(0deg, 0%, 100%);
+}
+.calculator-header .themes {
+  color: hsl(0deg, 0%, 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 10px;
+}
+.calculator-header .themes input {
+  max-width: 50px;
+}
+
+.calculator-main {
+  display: flex;
+  flex-direction: column;
+  max-width: 512px;
+  width: 100%;
+  min-height: 568px;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.calculator-screen {
+  border-radius: 10px;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 120px;
+  margin-bottom: 22px;
+  background-color: hsl(224deg, 36%, 15%);
+}
+.calculator-screen #result {
+  margin: 0 10px;
+  font-size: 54px;
+  font-family: "League Spartan", sans-serif;
+  color: hsl(0deg, 0%, 100%);
+}
+
+.calculator-keys {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  min-height: 426px;
+  padding-top: 30px;
+  font-size: 60px;
+  background-color: hsl(223deg, 31%, 20%);
+}
+.calculator-keys .calculator-keys-content {
+  min-height: 394px;
+  max-width: 454px;
+  margin: 0 5%;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 56px 56px 56px 56px 56px;
+  grid-column-gap: 5%;
+  grid-row-gap: 5%;
+}
+.calculator-keys .calculator-keys-content button {
+  font-size: 32px;
+  font-weight: 700;
+  font-family: "League Spartan", sans-serif;
+  color: hsl(221deg, 14%, 31%);
+  background-color: hsl(30deg, 25%, 89%);
+  border: none;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px hsl(28deg, 16%, 65%);
+}
+.calculator-keys .calculator-keys-content button:active {
+  background-color: white;
+}
+.calculator-keys .calculator-keys-content .delete {
+  font-size: 20px;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(225deg, 21%, 49%);
+  box-shadow: 0 4px hsl(224deg, 28%, 35%);
+}
+.calculator-keys .calculator-keys-content .all-clear {
+  font-size: 20px;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(225deg, 21%, 49%);
+  grid-column: 1/3;
+  box-shadow: 0 4px hsl(224deg, 28%, 35%);
+}
+.calculator-keys .calculator-keys-content .equal-sign {
+  color: hsl(0deg, 0%, 100%);
+  grid-column: 3/5;
+  background-color: hsl(6deg, 63%, 50%);
+  box-shadow: 0 4px hsl(6deg, 70%, 34%);
+}/*# sourceMappingURL=style.css.map */
