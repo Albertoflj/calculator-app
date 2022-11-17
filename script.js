@@ -15,7 +15,7 @@ const theme = {
   2: "theme2",
   3: "theme3",
 };
-let currentTheme = 1;
+let currentTheme = 0;
 
 //get if any theme was set
 if (localStorage.getItem("theme")) {
